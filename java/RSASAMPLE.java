@@ -86,19 +86,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         super.onCreate(savedInstanceState);
         Log.d("login oncreate ","abc");
 
-        String plaintext = "{\"amount\":10000,\"fee\":0,\"merchantcode\":\"SCB01\",\"phonenumber\":\"0966543465\",\"transid\":\"Uniqueuetransid\",\"username\":\"user@gmail.com\",\"billid\":\"UniqueueBillId\",\"version\":\"1.0\"}";
+        String plaintext = "{\"amount\":10000,\"fee\":0,\"merchantcode\":\"SCB01\",\"phonenumber\":\"0919888999\",\"transid\":\"Uniqueuetransid\",\"username\":\"user@gmail.com\",\"billid\":\"UniqueueBillId\",\"version\":\"1.0\"}";
 
-        String pubkey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAip7E4c5ylxCsH+g/GMco4/6/nhc1rqZGhGzk0E3cT11OQUeQ9F1rRGML3mk9FAirzzwjsrndxdJaOZTj8xFsxPmBf8j46oac7PgbOL9i/veDDDjUIFITPa+BRzL6DIUXG0PasiU6CLgpCKPUHZLIi7ZedAruWUideIbRoaBuzpaqDuuMqFeLiIapJj6TaAwllS1EwcZyvAD+jRBDsiOnOMRz/KvJZxZ957TtaUVn+UzBDhrYsIMpt8rcFxIFkZBgpgfWbvVaP3nLyWuUrrJMSdNsslnUlOlmfCz2JtIAq3711hfXxYhkY5FjdJwTK5HJEVrUqtC3CPUJG1STNlo1IwIDAQAB";
+        String pubkey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkpa+qMXS6O11x7jBGo9W3yxeHEsAdyDE40UoXhoQf9K6attSIclTZMEGfq6gmJm2BogVJtPkjvri5/j9mBntA8qKMzzanSQaBEbr8FyByHnf226dsLt1RbJSMLjCd3UC1n0Yq8KKvfHhvmvVbGcWfpgfo7iQTVmL0r1eQxzgnSq31EL1yYNMuaZjpHmQuT24Hmxl9W9enRtJyVTUhwKhtjOSOsR03sMnsckpFT9pn1/V9BE2Kf3rFGqc6JukXkqK6ZW9mtmGLSq3K+JRRq2w8PVmcbcvTr/adW4EL2yc1qk9Ec4HtiDhtSYd6/ov8xLVkKAQjLVt7Ex3/agRPfPrNwIDAQAB";
         String rsa = encryptRSA(plaintext,pubkey);
 
         Log.d("rsa encrypt ",rsa + " >end");
-
-        /*
-        * example result
-
-        RucSU2H4xDSezrHUATmb3kMWChN+Ulqss6Lb5RFRTeHW+latMq21fB/j3d0NXqxqzcXni1oE8VA7bSZaV8F1q2KXfC1qb9zQ3NLt241KGVQiPN46C7iX1eN5iqXEvu633aNAOfSSjdfiklRNw1pvZT2ada+6w17oJRe+kYN2ao3iaXJGjGAgcn1ZHkZzJKm1wFie6Xfaycwve90B4Qx/5sal6nJ9XpWqGkjCKX2eUBKhSv6qlMXOyizrEjRTf1XUy1Rp26BDcQga9aJ7oQC5iRFHPyVdELFu8oHn0suLPlb/MmsRERbLvPUw++gc+WwXneo89cImjL7H0Lc0Kp1rwg==
-
-        * */
 
     }
 
